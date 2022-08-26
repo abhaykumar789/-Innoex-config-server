@@ -1,6 +1,6 @@
 #Configure the Server Port
 server:
-  port: 8999
+  port: 8080
 
 eureka:
   client:
