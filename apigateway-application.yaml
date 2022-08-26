@@ -68,7 +68,7 @@ spring:
             - RewritePath=/post(?<segment>/?.*), $\{segment}
          
          - id: video-chat-service
-          uri: http://localhost:8091
+          uri: http://localhost:8086
           predicates:
             - Path= /videochat/**
           filter:
