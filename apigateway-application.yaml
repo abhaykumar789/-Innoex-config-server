@@ -28,13 +28,13 @@ spring:
       routes:
         #Route Mapping
         - id: user-service
-          uri: http://localhost:8082/
+          uri: http://localhost:8082
           predicates:
             - Path= /expert/**
           filter:
             - RewritePath=/user(?<segment>/?.*), $\{segment}
         - id: user-service
-          uri: http://localhost:8082/
+          uri: http://localhost:8082
           predicates:
             - Path= /innovator/**
           filter:
