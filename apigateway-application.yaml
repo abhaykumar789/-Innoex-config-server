@@ -66,12 +66,12 @@ spring:
             - Path= /proposal/**
           filter:
             - RewritePath=/post(?<segment>/?.*), $\{segment}        
-         - id: video-chat-service
-          uri: http://localhost:8086/
-          predicates:
-            - Path= /videochat/**
-          filter:
-            - RewritePath=/post(?<segment>/?.*), $\{segment}   
+#          - id: video-chat-service
+#           uri: http://localhost:8086/
+#           predicates:
+#             - Path= /videochat/**
+#           filter:
+#             - RewritePath=/post(?<segment>/?.*), $\{segment}   
             
 
 
